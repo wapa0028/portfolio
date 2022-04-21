@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my code*/
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: blanchedalmond;
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    color: blanchedalmond;
+}
+
+a{
+    color:blanchedalmond;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    transition: all 1s;
+}
+
+.showHeader{
+    background-color: #292929;
+}
+
+nav{
+    
+    
+    width: 50%;
+   
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.reveal{
+    opacity: 1;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown{
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background: blanchedalmond;
+}
+
+  .hidden{
+    display: none;
+}
+
+.dropdown{
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background: blanchedalmond;
+}
+
+body{
+    background-color: #292929;
+    font-family: 'Montserrat';
+}
+
+
+a:hover{
+    color: white;
+}
+
+.vid{
+    text-align: center;
+    padding: 4rem;
+    display: block;
+    justify-content: space-around;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: blanchedalmond;
+    display: flex;
+
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.intro{
+    height: 100vh;
+}
+
+.intro video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+section{
+    height: 100vh;
+    color: #292929;
+}
+
+h1{
+    padding-top: 7rem;
+    text-align: center;
+}
+
+/* styles for form*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: blanchedalmond;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  margin-right: 2em;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 5%;
+}
+
+iframe{
+    border-width: 0px;
+}
