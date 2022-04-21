@@ -190,26 +190,30 @@ h1{
 /* styles for form*/
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 200%;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  font-family: 'montserrat';
 }
 
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  color: blanchedalmond;
 }
 
 input[type=submit] {
   background-color: blanchedalmond;
-  color: black;
+  color: #292929;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+  float: left;
+  padding-top: 1em;
+  font-family: 'montserrat';
 }
 
 input[type=submit]:hover {
@@ -235,9 +239,15 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-75px);
+    padding-top: 3em;
+}
+
 /* Clear floats after the columns */
 .row:after {
-    content: "";
     display: table;
     clear: both;
   }
@@ -272,3 +282,4 @@ img{
 iframe{
     border-width: 0px;
 }
+
