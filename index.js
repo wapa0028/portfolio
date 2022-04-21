@@ -31,6 +31,8 @@ function dropClick(){
 }
 //nav end 
 
+/*code for scrolling animation doesn't work. I can't figure out the issue. I tried validating and fixing the errors however the video won't play.
+
 /*
 const intro= document.querySelector('.intro');
 const video= intro.querySelector('video');
